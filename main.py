@@ -29,9 +29,6 @@ sp = spotipy.Spotify(
 )
 user_id = sp.current_user()["id"]
 
-# import pprint
-# data  = {"access_token": "BQCnRsNTVZHyuZGgOZFAVb8d1U_YTBPJzzCLZxGTioYN3sWARyYW6B5fCfzHMow2V_iECaGpbB7Z_Istv-vz2OBow8izA4EtSNEIrqiYWExO4d8ECoxZRZSoIBBKG3M-6OSdLAuQT_yBgJW-G9rJvJplidhIICoOGYDGy_mJ8izw6_6EUhC2E17VGg5YRMULGxLoGcAEKi7uj7mbE1yXkAsMczXUtU87TQ", "token_type": "Bearer", "expires_in": 3600, "refresh_token": "AQDZfMP8aq4wGVri_iveryreSAff9JaMRhVJz84qb8lgXAm8Wqd3N9YnazUyNh3Cw5Q8wyy8D9ItntfNdKpl1u9zeFxt_Xb9fIfO-cUfFkonKhKn9XvryuhArFHnDszPq2E", "scope": "playlist-modify-private", "expires_at": 1663430063}
-# json = pprint.pprint(data)
 song_uris = []
 year = date.split("-")[0]
 for song in song_names:
